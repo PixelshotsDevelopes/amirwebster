@@ -1,0 +1,37 @@
+<div class="container-fluid mt-5 contact-style" id="contactid">
+    <div class="row">
+        <div class="col-md-10 col-12 mx-auto">
+            <h1 class="text-center main-heading">Contact us</h1>
+            <p class="text-center sub-heading">we will be happy to help you</p>
+            <div class="row ">{{!contact style contact-style you can add this classes to this div}}
+                <div class="col-md-6 col-12 mx-auto">
+                    <form action="/contact" method="post">
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Full Name</label>
+                            <input type="text" name="name" class="form-control" id="exampleInputName1">
+                        </div>
+                        <div class="mb-3 ">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">phone</label>
+                            <input type="phone" class="form-control" name="phone" id="exampleInputPassword1">
+                        </div>
+                        {{!-- <div class="mb-3">
+                            <label for="exampleInputMessage1" class="form-label">Message</label>
+                            <input type="text" name="message" class="form-control" id="exampleInputMessage1">
+                        </div> --}}
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class=" btn-style btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
