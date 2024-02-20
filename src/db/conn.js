@@ -1,3 +1,4 @@
+require('dotenv').config()
 const mongoose = require('mongoose');
 main().then(()=>{
     console.log("Mongoose connection succesful");
@@ -6,5 +7,5 @@ main().then(()=>{
 
 //creating a db;
 async function main() {
-  await mongoose.connect('mongodb+srv://mdforeversmart200:2HFmdmWIgWrPK24Q@cluster0.ehgpcyl.mongodb.net/');  
+  await mongoose.connect(process.env.MONGOURI);  
 }
