@@ -6,5 +6,5 @@ main().then(()=>{
 
 //creating a db;
 async function main() {
-  await mongoose.connect('mongodb://127.0.0.1:27017/amirdynamic');
+  await mongoose.connect('mongodb+srv://mdforeversmart200:2HFmdmWIgWrPK24Q@cluster0.ehgpcyl.mongodb.net/');  
 }
