@@ -1,4 +1,4 @@
-require('dotenv').config()
+
 const mongoose = require('mongoose');
 main().then(()=>{
     console.log("Mongoose connection succesful");
